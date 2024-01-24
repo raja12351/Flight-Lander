@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.number h1 a{
+    text-decoration: none;
+    color: white;
+}
+.delta1-a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px !important;
+}
+.number2:hover{
+    background-color: black;
+}
+.number2:hover .delta1-a{
+    background-color: black;
+    color: orange;
+}
+.lander-top{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0.1;
+}
+.number{
+    opacity: 0.1;
+    background: linear-gradient(to top,#032b80,rgb(196, 195, 195));
+    color: white;
+    padding-block: 8px;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+.number .call-logo{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    background-color: white;
+    color: #032b80;
+}
+.call-logo2{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    background-color: none;
+    color: black;
+}
+.number:hover h1,.call-logo{
+    scale: 1.03;
+}
+.number2:hover .call-logo2{
+    color: orange;
+    background-color: black;
+    border: 1px solid orange;
+}
+.logo{
+    margin-block: 10px;
+    cursor: pointer;
+    width: 60% !important;
+}
+.logo-low{
+    font-size: 18px;
+    font-weight: 600;
+}
+.delta-payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 18px;
+    padding-inline: 20px;
+}
+.delta4-list{
+    text-align: left;
+    list-style: none;
+    line-height: 25px;
+    margin-bottom: 30px;
+    padding-left: 600px;
+}
+.hr{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-block: 10px;
+}
+.hr-low{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px yellow;
+}
+.pop-up-hr-low{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px yellow;
+}
+.number2{
+    background-color: orange;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block: 20px;
+    padding-inline: 40px;
+    padding-block: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.number:hover>.call-logo{
+    color: orange;
+    background-color: black;
+    border: 1px solid orange;
+}
+.delta2{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(./Images/cristofer-maximilian-uQDRDqpYJHI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-block: 50px;
+}
+.delta2-p{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.d2-span{
+    color: rgb(193, 193, 19); 
+    font-size: 35px;
+}
+.left-section, .right-section{
+    text-align: left;
+}
+.right-section{
+    line-height: 30px;
+}
+.booking-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 100px;
+    padding-inline: 80px;
+    font-size: 20px;
+}
+.form-input{
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+}
+.input-top{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+.input-bottom{
+    text-align: left;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+.form-input-date{
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+.persons{
+    margin-bottom: 30px;
+}
+.form-input-options{
+    border: none;
+    font-size: 30px;
+    background: none;
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+.form-input-options>option{
+    color: black;
+    font-size: 20px;
+}
+.search-btn{
+    background-color: orange;
+    width: max-content;
+    color: white;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    margin-bottom: 10px;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.search-btn:hover{
+    scale: 1.04;
+}
+.search-btn a{
+    text-decoration: none;
+    color: white;
+}
+.tilt{
+    transform: rotate(-40deg);
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+}
+.form-input-date::-webkit-calendar-picker-indicator{
+    background-color: white;
+    border-radius: 50%;
+}
+
+.delta3{
+    border: 2px solid rgb(0, 94, 255);
+    border-radius: 5px;
+    margin-inline: 80px;
+    padding-inline: 50px;
+    margin-block: 20px;
+    text-align: left;
+    padding-block: 20px;
+}
+.spl-details{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    padding-block: 10px;
+    grid-gap: 30px;
+}
+.spl-details img{
+    padding-left: auto;
+    padding-right: auto;
+}
+.delta3-top{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.delta4 h1{
+    margin-bottom: 10px;
+}
+.delta4 p{
+    text-align: center;
+    padding-inline: 30px;
+    margin-bottom: 20px;
+}
+
+.pop-up{
+    width: 48vw;
+    height: 80vh;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-inline: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.logo-pop-up{
+    width: 50%;
+    margin-block: 20px;
+    cursor: pointer;
+    padding-left: 180px;
+}
+.pop-up-hr-low{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: 5px 5px 5px yellow;
+}
+.logo-pop-up-low{
+    font-size: 23px;
+    font-weight: 600;
+}
+.delta-payment p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.pop-up-bullet{
+    text-align: left;
+    margin-left: 270px;
+    line-height: 23px;
+}
+.hr-pop-up{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-block: 20px;
+}
+.pop-up-row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.pop-up-close{
+    font-size: 30px;
+    cursor: pointer;
+}
+.pop-up .number2{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .lander-top{
+        width: 100%;
+        overflow: hidden;
+    }
+    .logo{
+        width: 100%;
+    }
+    .delta2-p{
+        font-size: 20px;
+    }
+    .d2-span{
+        font-size: 30px;
+    }
+    .form-input{
+        width: 90%;
+    }
+    .booking-form{
+        grid-gap: 10%;
+        grid-template-columns: 145px 145px;
+        font-size: 1.1rem;
+        padding-inline: 2%;
+    }
+    .form-input{
+        font-size: 18px;
+    }
+    .input-top{
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .input-bottom{
+        margin-bottom: 20px;
+    }
+    .form-input-date{
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .persons{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .form-input-options{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .form-input-options option{
+        font-size: 12px;
+    }
+    .right-section{
+        margin-top: 2px;
+        line-height: 15px;
+    }
+    .search-btn{
+        font-size: 20px;
+    }
+    .delta3{
+        padding-inline: 4px;
+        margin-inline: 10px;
+    }
+    .delta4 h1{
+        font-size: 20px;
+        padding-inline: 10px;
+    }
+    .delta4 p{
+        font-size: 15px;
+    }
+    .spl-details img{
+        padding-left: 0px;
+    }
+    .pop-up{
+        width: 90vw;
+        height: 73vh;
+        margin-inline: 5px;
+    }
+    .pop-up-bullet{
+        text-align: left;
+        line-height: 24px;
+        margin-inline: auto;
+        transform: translate(22%,-5%);
+    }
+    .logo-pop-up{
+        width: 70%;
+        margin-block: 20px;
+        padding-left: 13%;
+    }
+    .logo-pop-up-low{
+        font-size: 21px;
+        font-weight: 600;
+    }
+    .delta-payment p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .pop-up .number2{
+        margin-top: 2rem !important;
+        padding-inline: 1.3rem;
+        margin-top: 5px !important;
+    }
+    .hr-pop-up{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-block: 20px;
+    }
+    .pop-up-close{
+        text-align: right;
+    }
+    .pop-up .number2{
+        margin-top: 5px;
+        padding-block: 8px;
+        margin-inline: auto;
+    }
+    .delta1-a{
+        font-size: 24px !important;
+    }
+    .pop-up .call-logo2{
+        font-size: 22px;
+    }
+    .delta4-list{
+        text-align: left;
+        padding-left: 40px;
+    }
+}
