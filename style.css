@@ -313,7 +313,7 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
     .lander-top{
         width: 100%;
         overflow: hidden;
@@ -384,7 +384,7 @@
     }
     .pop-up{
         width: 90vw;
-        height: 73vh;
+        height: auto;
         margin-inline: 5px;
     }
     .pop-up-bullet{
@@ -407,9 +407,9 @@
         font-weight: 600;
     }
     .pop-up .number2{
-        margin-top: 2rem !important;
-        padding-inline: 1.3rem;
-        margin-top: 5px !important;
+        padding-inline: 5%;
+        margin-top: 10px !important;
+        width: 69%;
     }
     .hr-pop-up{
         width: 90px;
@@ -426,10 +426,10 @@
         margin-inline: auto;
     }
     .delta1-a{
-        font-size: 24px !important;
+        font-size: 1.5rem !important;
     }
     .pop-up .call-logo2{
-        font-size: 22px;
+        font-size: 1rem;
     }
     .delta4-list{
         text-align: left;
