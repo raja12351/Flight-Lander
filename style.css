@@ -9,7 +9,8 @@
 .delta1-a{
     text-decoration: none;
     color: black;
-    font-size: 28px !important;
+    font-size: 3rem;
+    font-weight: bolder !important;
 }
 .number2:hover{
     background-color: black;
@@ -26,7 +27,7 @@
 }
 .number{
     opacity: 0.1;
-    background: linear-gradient(to top,#032b80,rgb(196, 195, 195));
+    background-color: rgb(21,84,139);
     color: white;
     padding-block: 8px;
     cursor: pointer;
@@ -40,13 +41,13 @@
     padding: 10px;
     font-size: 25px;
     background-color: white;
-    color: #032b80;
+    color: rgb(21,84,139);
 }
 .call-logo2{
     border: 1px solid black;
     border-radius: 50%;
     padding: 10px;
-    font-size: 25px;
+    font-size: 2rem;
     background-color: none;
     color: black;
 }
@@ -82,8 +83,8 @@
     padding-left: 600px;
 }
 .hr{
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-block: 10px;
 }
@@ -106,7 +107,7 @@
     margin-right: auto;
     margin-block: 20px;
     padding-inline: 40px;
-    padding-block: 15px;
+    padding-block: 5px;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -220,7 +221,7 @@
 }
 
 .delta3{
-    border: 2px solid rgb(0, 94, 255);
+    border: 2px solid rgb(0,57,119);
     border-radius: 5px;
     margin-inline: 80px;
     padding-inline: 50px;
@@ -295,8 +296,8 @@
     line-height: 23px;
 }
 .hr-pop-up{
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-block: 20px;
 }
@@ -311,6 +312,61 @@
 }
 .pop-up .number2{
     margin-top: 10px;
+}
+.delta5{
+    border-top: 1px solid gray;
+    padding-block: 10px;
+    color: white;
+    background-color: rgb(0,57,119);
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:500px){
+    .pop-up{
+        width: 90vw;
+        height: auto;
+        margin-inline: 5px;
+    }
+    .pop-up-bullet{
+        text-align: left;
+        line-height: 25px;
+        margin-inline: auto;
+        transform: translate(29%,-5%);
+    }
+    .logo-pop-up{
+        width: 35%;
+        margin-block: 15px;
+        padding-left: 32%;
+    }
+    .logo-pop-up-low{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .hr-pop-up{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-block: 20px;
+    }
+    .pop-up-close{
+        text-align: right;
+    }
+    .pop-up .number2{
+        padding-inline: 3%;
+        margin-top: 10px !important;
+        width: 69%;
+    }
+    .delta1-a{
+        font-size: 1.7rem !important;
+    }
+    .pop-up .call-logo2{
+        font-size: 1.2rem;
+    }
+    .delta4-list{
+        text-align: left;
+        padding-left: 40px;
+    }
 }
 
 @media screen and (max-width:430px) {
@@ -391,7 +447,7 @@
         text-align: left;
         line-height: 24px;
         margin-inline: auto;
-        transform: translate(22%,-5%);
+        transform: translate(24%,-5%);
     }
     .logo-pop-up{
         width: 70%;
@@ -407,32 +463,45 @@
         font-weight: 600;
     }
     .pop-up .number2{
-        padding-inline: 5%;
+        padding-inline: 3%;
         margin-top: 10px !important;
         width: 69%;
     }
     .hr-pop-up{
-        width: 90px;
-        height: 90px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         margin-block: 20px;
     }
     .pop-up-close{
         text-align: right;
     }
-    .pop-up .number2{
-        margin-top: 5px;
-        padding-block: 8px;
-        margin-inline: auto;
-    }
     .delta1-a{
-        font-size: 1.5rem !important;
+        font-size: 1.6rem !important;
     }
     .pop-up .call-logo2{
         font-size: 1rem;
     }
+    .call-logo2{
+        font-size: 1.3rem;
+    }
     .delta4-list{
         text-align: left;
         padding-left: 40px;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .delta1-a{
+        font-size: 1.3rem !important;
+    }
+    .pop-up .call-logo2{
+        font-size: 1rem;
+    }
+    .pop-up-bullet{
+        text-align: left;
+        line-height: 24px;
+        margin-inline: auto;
+        transform: translate(17%,-5%);
     }
 }
