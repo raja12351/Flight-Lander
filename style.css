@@ -35,6 +35,23 @@
     top: 0;
     text-align: center;
 }
+@keyframes shake{
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 .number .call-logo{
     border: 1px solid white;
     border-radius: 50%;
@@ -42,6 +59,7 @@
     font-size: 25px;
     background-color: white;
     color: rgb(21,84,139);
+    animation: shake 0.5s infinite;
 }
 .call-logo2{
     border: 1px solid black;
@@ -50,6 +68,7 @@
     font-size: 2rem;
     background-color: none;
     color: black;
+    animation: shake 0.5s infinite;
 }
 .number:hover h1,.call-logo{
     scale: 1.03;
@@ -65,7 +84,7 @@
     width: 60% !important;
 }
 .logo-low{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 .delta-payment{
@@ -92,13 +111,11 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    text-shadow: 5px 5px 5px yellow;
 }
 .pop-up-hr-low{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    text-shadow: 5px 5px 5px yellow;
 }
 .number2{
     background-color: orange;
@@ -254,64 +271,11 @@
     margin-bottom: 20px;
 }
 
-.pop-up{
-    width: 48vw;
-    height: 80vh;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 15px;
-    margin-inline: auto;
-    text-align: center;
-    align-items: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.logo-pop-up{
-    width: 50%;
-    margin-block: 20px;
-    cursor: pointer;
-    padding-left: 180px;
-}
-.pop-up-hr-low{
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    text-shadow: 5px 5px 5px yellow;
-}
-.logo-pop-up-low{
-    font-size: 23px;
-    font-weight: 600;
-}
 .delta-payment p{
     text-align: center;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
-}
-.pop-up-bullet{
-    text-align: left;
-    margin-left: 270px;
-    line-height: 23px;
-}
-.hr-pop-up{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-block: 20px;
-}
-.pop-up-row{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-.pop-up-close{
-    font-size: 30px;
-    cursor: pointer;
-}
-.pop-up .number2{
-    margin-top: 10px;
 }
 .delta5{
     border-top: 1px solid gray;
@@ -321,47 +285,147 @@
     font-weight: 300;
     font-size: 0.8rem;
 }
+.pop-up{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-inline: auto;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pop-up-2{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    border: 2px solid black;
+}
+.pop-up-close{
+    font-size: 30px;
+    cursor: pointer;
+}
+.pop-up-2-row{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-pop-up-2{
+    width: 38%;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    margin-left: 33%;
+}
+.card-img-top{
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+    margin-block: 10px;
+}
+.call-logo-pop{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    color: rgb(0,57,119);
+    animation: shake 0.5s infinite;
+}
+.card-text{
+    text-align: center;
+}
+.card-text-2{
+    border-top: 1px solid grey;
+    text-align: left;
+}
+.btn{
+    font-size: 1.3rem !important;
+    background-color: rgb(0,57,119) !important;
+}
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
+    .lander-top{
+        width: 100%;
+        overflow: hidden;
+    }
+    .logo{
+        width: 100%;
+    }
+    .delta2-p{
+        font-size: 20px;
+    }
+    .d2-span{
+        font-size: 30px;
+    }
+    .form-input{
+        width: 90%;
+    }
+    .booking-form{
+        grid-gap: 10%;
+        grid-template-columns: 145px 145px;
+        font-size: 1.1rem;
+        padding-inline: 2%;
+    }
+    .form-input{
+        font-size: 18px;
+    }
+    .input-top{
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .input-bottom{
+        margin-bottom: 20px;
+    }
+    .form-input-date{
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .persons{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .form-input-options{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .form-input-options option{
+        font-size: 12px;
+    }
+    .right-section{
+        margin-top: 2px;
+        line-height: 15px;
+    }
+    .search-btn{
+        font-size: 20px;
+    }
+    .delta3{
+        padding-inline: 4px;
+        margin-inline: 10px;
+    }
+    .delta4 h1{
+        font-size: 20px;
+        padding-inline: 10px;
+    }
+    .delta4 p{
+        font-size: 15px;
+    }
+    .spl-details img{
+        padding-left: 0px;
+    }
+    .delta-payment p{
+        font-size: 14px;
+        font-weight: 600;
+    }
     .pop-up{
         width: 90vw;
         height: auto;
         margin-inline: 5px;
     }
-    .pop-up-bullet{
-        text-align: left;
-        line-height: 25px;
-        margin-inline: auto;
-        transform: translate(29%,-5%);
-    }
-    .logo-pop-up{
-        width: 35%;
-        margin-block: 15px;
-        padding-left: 32%;
-    }
-    .logo-pop-up-low{
-        font-size: 25px;
-        font-weight: 600;
-    }
-    .hr-pop-up{
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        margin-block: 20px;
-    }
-    .pop-up-close{
-        text-align: right;
-    }
-    .pop-up .number2{
-        padding-inline: 3%;
-        margin-top: 10px !important;
-        width: 69%;
-    }
     .delta1-a{
         font-size: 1.7rem !important;
-    }
-    .pop-up .call-logo2{
-        font-size: 1.2rem;
     }
     .delta4-list{
         text-align: left;
@@ -438,56 +502,24 @@
     .spl-details img{
         padding-left: 0px;
     }
-    .pop-up{
-        width: 90vw;
-        height: auto;
-        margin-inline: 5px;
-    }
-    .pop-up-bullet{
-        text-align: left;
-        line-height: 24px;
-        margin-inline: auto;
-        transform: translate(24%,-5%);
-    }
-    .logo-pop-up{
-        width: 70%;
-        margin-block: 20px;
-        padding-left: 13%;
-    }
-    .logo-pop-up-low{
-        font-size: 21px;
-        font-weight: 600;
-    }
     .delta-payment p{
         font-size: 14px;
         font-weight: 600;
     }
-    .pop-up .number2{
-        padding-inline: 3%;
-        margin-top: 10px !important;
-        width: 69%;
-    }
-    .hr-pop-up{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-block: 20px;
-    }
     .pop-up-close{
-        text-align: right;
+        font-size: 30px;
+        cursor: pointer;
     }
     .delta1-a{
-        font-size: 1.6rem !important;
-    }
-    .pop-up .call-logo2{
-        font-size: 1rem;
-    }
-    .call-logo2{
-        font-size: 1.3rem;
+        font-weight: 900 !important;
+        font-size: 1.4rem !important;
     }
     .delta4-list{
         text-align: left;
         padding-left: 40px;
+    }
+    .pop-up-2{
+        width: 90%;
     }
 }
 
@@ -495,13 +527,9 @@
     .delta1-a{
         font-size: 1.3rem !important;
     }
-    .pop-up .call-logo2{
-        font-size: 1rem;
-    }
-    .pop-up-bullet{
-        text-align: left;
-        line-height: 24px;
-        margin-inline: auto;
-        transform: translate(17%,-5%);
+}
+@media screen and (max-width:298px) {
+    .delta1-a{
+        font-size: 1.1rem !important;
     }
 }
